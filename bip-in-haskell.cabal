@@ -6,7 +6,7 @@ version:             1.0.0.0
 synopsis:            Adaptation of the BIP framework in Haskell.
 -- description:         
 homepage:            risd.epfl.ch
-license:             AllRightsReserved
+license:             Apache-2.0
 license-file:        LICENSE
 author:              Romain Edelmann
 maintainer:          romain.edelmann@gmail.com
