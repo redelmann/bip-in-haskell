@@ -20,48 +20,48 @@ library
   exposed-modules:     BIP
   other-modules:       BIP.Atom, BIP.Connector, BIP.Engine, BIP.Interaction, BIP.Optimisations, BIP.Port, BIP.Semantic, BIP.System, BIP.WaitingList, BIP.Example.TokenRing, BIP.Example.ProducersConsumers, BIP.Example.DiningPhilosophers
   other-extensions:    GADTs, GeneralizedNewtypeDeriving, RankNTypes, BangPatterns, TupleSections, RecursiveDo
-  build-depends:       base >=4.7 && <4.8, mtl >=2.1 && <2.2, operational >=0.2 && <0.3, profunctors >=4.3 && <4.4, containers >=0.5 && <0.6, vector >=0.10 && <0.11, random-shuffle
+  build-depends:       base >=4.8 && <4.10, mtl >=2.2 && <2.3, operational >=0.2 && <0.3, profunctors >=5.0 && <6, containers >=0.5 && <0.6, vector >=0.11 && <0.12, random-shuffle
   hs-source-dirs:      src
   default-language:    Haskell2010
 
 executable tokenring
   main-is:             BIP/Example/TokenRingMain.hs
-  build-depends:       base >=4.7 && <4.8, mtl >=2.1 && <2.2, operational >=0.2 && <0.3, profunctors >=4.3 && <4.4, containers >=0.5 && <0.6, vector >=0.10 && <0.11, random-shuffle
+  build-depends:       base >=4.8 && <4.10, mtl >=2.2 && <2.3, operational >=0.2 && <0.3, profunctors >=5.0 && <6, containers >=0.5 && <0.6, vector >=0.11 && <0.12, random-shuffle
   hs-source-dirs:      src
   default-language:    Haskell2010
 
 benchmark tokenring-benchmark
   type:                exitcode-stdio-1.0
   main-is:             BIP/Example/TokenRingBenchmark.hs
-  build-depends:       base >=4.7 && <4.8, mtl >=2.1 && <2.2, operational >=0.2 && <0.3, profunctors >=4.3 && <4.4, containers >=0.5 && <0.6, vector >=0.10 && <0.11, random-shuffle, criterion
+  build-depends:       base >=4.8 && <4.10, mtl >=2.2 && <2.3, operational >=0.2.3 && <0.3, profunctors >=5.0 && <6, containers >=0.5 && <0.6, vector >=0.11 && <0.12, random-shuffle, criterion
   hs-source-dirs:      src
   default-language:    Haskell2010
   ghc-options:         -O3
 
 executable producersconsumers
   main-is:             BIP/Example/ProducersConsumersMain.hs
-  build-depends:       base >=4.7 && <4.8, mtl >=2.1 && <2.2, operational >=0.2 && <0.3, profunctors >=4.3 && <4.4, containers >=0.5 && <0.6, random-shuffle
+  build-depends:       base >=4.8 && <4.10, mtl >=2.2 && <2.3, operational >=0.2.3 && <0.3, profunctors >=5.0 && <6, containers >=0.5 && <0.6, random-shuffle
   hs-source-dirs:      src
   default-language:    Haskell2010
 
 benchmark producersconsumers-benchmark
   type:                exitcode-stdio-1.0
   main-is:             BIP/Example/ProducersConsumersBenchmark.hs
-  build-depends:       base >=4.7 && <4.8, mtl >=2.1 && <2.2, operational >=0.2 && <0.3, profunctors >=4.3 && <4.4, containers >=0.5 && <0.6, random-shuffle, criterion
+  build-depends:       base >=4.8 && <4.10, mtl >=2.2 && <2.3, operational >=0.2.3 && <0.3, profunctors >=5.0 && <6, containers >=0.5 && <0.6, random-shuffle, criterion
   hs-source-dirs:      src
   default-language:    Haskell2010
   ghc-options:         -O3
 
 executable diningphilosophers
   main-is:             BIP/Example/DiningPhilosophersMain.hs
-  build-depends:       base >=4.7 && <4.8, mtl >=2.1 && <2.2, operational >=0.2 && <0.3, profunctors >=4.3 && <4.4, containers >=0.5 && <0.6, vector >=0.10 && <0.11, random-shuffle, criterion
+  build-depends:       base >=4.8 && <4.10, mtl >=2.2 && <2.3, operational >=0.2.3 && <0.3, profunctors >=5.0 && <6, containers >=0.5 && <0.6, vector >=0.11 && <0.12, random-shuffle, criterion
   hs-source-dirs:      src
   default-language:    Haskell2010
 
 benchmark diningphilosophers-benchmark
   type:                exitcode-stdio-1.0
   main-is:             BIP/Example/DiningPhilosophersBenchmark.hs
-  build-depends:       base >=4.7 && <4.8, mtl >=2.1 && <2.2, operational >=0.2 && <0.3, profunctors >=4.3 && <4.4, containers >=0.5 && <0.6, vector >=0.10 && <0.11, random-shuffle, criterion
+  build-depends:       base >=4.8 && <4.10, mtl >=2.2 && <2.3, operational >=0.2.3 && <0.3, profunctors >=5.0 && <6, containers >=0.5 && <0.6, vector >=0.11 && <0.12, random-shuffle, criterion
   hs-source-dirs:      src
   default-language:    Haskell2010
   ghc-options:         -O3
